@@ -1,41 +1,52 @@
-# Таблица Шульте
+# Schulte Table
 
-Минималистичное одностраничное веб-приложение для тренировки внимания, скорости реакции и концентрации.
+Single-page web application for attention and concentration training.
 
-![Скриншот приложения](screenshot.png)
+## What It Does
 
-## Описание
+Displays a 5×5 Schulte table with numbers from 1 to 25 in random order. The task is to click the numbers in ascending order as fast as possible. A timer at the bottom measures completion time.
 
-Это приложение представляет собой чёрно-белую таблицу Шульте 5×5, в которой числа от 1 до 25 расположены в случайном порядке. Ваша задача — как можно быстрее нажимать числа по порядку от 1 до 25.
+The interface is deliberately minimal. Black numbers on a white table. No distracting elements.
 
-Приложение выполнено в минималистичном стиле: только черные числа, чёрно-белая таблица, никаких отвлекающих элементов. Внизу экрана — кнопка "Начать" и простой таймер без оформления.
+## How to Use
 
-Идеально подходит для:
+1. Click the start button.
+2. The table appears with numbers in random order.
+3. Click numbers from 1 to 25 in order.
+4. The timer shows elapsed time.
 
-- Тренировки внимания и наблюдательности
-- Улучшения зрительного восприятия
-- Развития скорости мышления
+## Features
 
-## Как пользоваться
+- Responsive layout. Works on desktop and mobile.
+- No installation, no registration.
+- Runs directly in the browser.
+- Timer starts on first click.
 
-1. Нажмите кнопку **Начать**.
-2. Таблица с числами появится в случайном порядке.
-3. Нажимайте на числа по порядку от 1 до 25.
-4. Таймер покажет, за сколько времени вы прошли таблицу.
+## Stack
 
-## Особенности
+- HTML
+- CSS
+- JavaScript
 
-- Полностью адаптивный интерфейс
-- Подходит для десктопа и мобильных устройств
-- Не требует установки и регистрации
-- Работает прямо в браузере
+No frameworks. No backend. The entire application is client-side.
 
-## Демо
+## Running Locally
 
-[Открыть онлайн-приложение](https://x14.github.io/shulte-table/)
+Open `index.html` in a browser. No build step required.
 
-## Лицензия
+## Live Demo
 
-Проект распространяется по лицензии [MIT](LICENSE).
+https://x14.github.io/shulte-table/
 
-Автор: [xm14](https://github.com/xm14)
+## Notes
+
+The number placement uses a Fisher-Yates shuffle. Each generation produces a new random order. The timer measures from the first click to the last correct number, not from page load.
+
+## License
+
+MIT. See LICENSE file.
+
+## Contact
+
+Email: martinrlab@gmail.com
+I try to respond quickly.
